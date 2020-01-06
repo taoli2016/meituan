@@ -1,0 +1,26 @@
+<view class="homeRoot">
+  <view class="header">
+    <view class="avatar">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+    <view class="location">
+      <view class="place">{{ place }}
+        <image class="arrow" src="../../images/home/arrow.png"></image>
+      </view>
+      <view class="weather">多云 15℃</view>
+    </view>
+    <view class="search">
+      <view class="iptSearchImg">
+        <image src="../../images/home/search.png"></image>
+      </view>
+      <input class="searchipt" value="{{ iptVal }}" placeholder-style="color:#8B8B8B;font-size:25rpx;margin-left:10rpx;" placeholder="{{ searchIptHolder }}"></input>
+      <view class="iptSayImg">
+        <image src="../../images/home/语音.png"></image>
+      </view>
+    </view>
+    <view class="scan">
+      <image class="sacnImg" src="../../images/home/jiahao.png"></image>
+    </view>
+  </view>
+  <view class="content"></view>
+</view>
