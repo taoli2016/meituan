@@ -8,10 +8,46 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
+    headerTop:"0rpx",
 		userInfo: {},
     iptVal:'',
     place:'杭州',
-    searchIptHolder:'大汉烧烤(外卖满38减22)'
+    weather:"多云",
+    temperature:"16℃",
+    searchIptHolder:'大汉烧烤(外卖满38减22)',
+    littleIcon:[
+      { iconPath: "../../images/home/扫一扫.png", text:"扫一扫"},
+      { iconPath: "../../images/home/条形码.png", text: "付款码" },
+      { iconPath: "../../images/home/卡券.png", text: "红包/卡券" },
+      { iconPath: "../../images/home/自行车.png", text: "骑车" },
+    ],
+    firstGroup:[
+      { iconPath: "../../images/home/美食.png", color: "#EA8A42", text: "美食"},
+      { iconPath: "../../images/home/电影.png", color: "#EC623C",text: "电影/演出" },
+      { iconPath: "../../images/home/酒店.png", color: "#926448",text: "酒店住宿" },
+      { iconPath: "../../images/home/茶.png", color: "#6BB795",text: "休闲玩乐" },
+      { iconPath: "../../images/home/外卖.png", color: "#F1CA5D",text: "外卖" },
+    ],
+    secondGroup:[
+      { iconPath: "../../images/home/打车.png", text: "打车" },
+      { iconPath: "../../images/home/美发.png", text: "丽人/美发" },
+      { iconPath: "../../images/home/旅游.png", text: "周边游/旅游" },
+      { iconPath: "../../images/home/借钱.png", text: "借钱/信用卡" },
+      { iconPath: "../../images/home/机票.png", text: "火车票/机票" },
+      { iconPath: "../../images/home/春树.png", text: "免费领水果" },
+      { iconPath: "../../images/home/结婚证书.png", text: "结婚/摄影" },
+      { iconPath: "../../images/home/红包.png", text: "红包签到" },
+      { iconPath: "../../images/home/生活.png", text: "生活服务" },
+      { iconPath: "../../images/home/更多.png", text: "更多" },
+    ],
+    "bnrUrl": [
+      { url: "../../images/home/swiper1.jpg"}, 
+      { url: "../../images/home/swiper2.jpg" }, 
+      { url: "../../images/home/swiper3.jpg" }, 
+      { url: "../../images/home/swiper4.jpg" },
+      { url: "../../images/home/swiper5.png" },   
+    ],
+    "advertiseBgI":"../../images/home/advertise.jpg"
 	},
 
 	/**
@@ -102,5 +138,5 @@ Page({
 		  userInfo: e.detail.userInfo,
 		  hasUserInfo: true
 		})
-	  }
+	},
 })
