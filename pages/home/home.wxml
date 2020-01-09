@@ -68,7 +68,28 @@
       </view>
     </view>
     <view class="goods">
-    
+      <view class="goodsItem" wx:for="{{ goodsList }}" wx:key="key">
+        <view class="goodsContent">
+          <image class="goodsImg" src="{{ item.url }}"></image>
+          <view class="goodsTarget">
+            <text>{{ item.tag }}</text>
+          </view>
+          <view class="name-content">
+            <text>{{ item.name }}</text>
+          </view>
+          <view class="text-content">
+            <view class="shopScore">
+              <text>{{ item.score }}</text>
+            </view>
+            <view class="shopDiscript">
+              <text>{{ item.discript }}</text>
+            </view>
+          </view>
+          <view class="tags-content">
+            <text class="tags" wx:for="{{item.tagList }}" wx:for-item='tagItem'>{{ tagItem.text }}</text>
+          </view>
+        </view>
+      </view>
     </view>
   </view>
 </view>

@@ -47,7 +47,65 @@ Page({
       { url: "../../images/home/swiper4.jpg" },
       { url: "../../images/home/swiper5.png" },   
     ],
-    "advertiseBgI":"../../images/home/advertise.jpg"
+    "advertiseBgI":"../../images/home/advertise.jpg",
+    "goodsList":[
+      { 
+        url: "../../images/home/dahan.jpg", 
+        discript: "滨江区烤串口碑第一", 
+        name: "大汉烧烤(长河店)", 
+        score: "4.7分", 
+        tag: "点外卖·30分钟送达", 
+        tagList: [{ text: "38减22" }, { text: "78减37" }]
+      },
+      {
+        url: "../../images/home/zhengxin.jpg",
+        discript: "南瓜饼好吃啊啊啊啊啊",
+        name: "正新鸡排(滨兴店)",
+        score: "4.5分",
+        tag: "点外卖·30分钟送达",
+        tagList: [{ text: "20减5" }, { text: "30减12" }]
+      },
+      {
+        url: "../../images/home/juewei.jpg",
+        discript: "支持自取",
+        name: "绝味鸭脖(月明店)",
+        score: "4.6分",
+        tag: "点外卖·30分钟送达",
+        tagList: [{ text: "35减18" }, { text: "69减30" }]
+      },
+      {
+        url: "../../images/home/muyeding.jpg",
+        discript: "支持自取",
+        name: "木叶町(舟山店)",
+        score: "4.5分",
+        tag: "点外卖·30分钟送达",
+        tagList: [{ text: "58减8" }, { text: "169减30" }]
+      },
+      {
+        url: "../../images/home/yunzhongcaiguan.jpg",
+        discript: "良心商家",
+        name: "云中菜馆(万马店)",
+        score: "4.7分",
+        tag: "点外卖·30分钟送达",
+        tagList: [{ text: "65减12" }, { text: "120减20" }]
+      },
+      {
+        url: "../../images/home/jiangxiaolu.jpg",
+        discript: "老板人很热情",
+        name: "江小鲈(武林店)",
+        score: "4.8分",
+        tag: "点外卖·30分钟送达",
+        tagList: [{ text: "30减6" }, { text: "69减15" }]
+      },
+      {
+        url: "../../images/home/huangniurouguan.jpg",
+        discript: "也太好吃了吧",
+        name: "黄牛肉馆(武林店)",
+        score: "4.5分",
+        tag: "点外卖·30分钟送达",
+        tagList: [{ text: "52减8" }, { text: "98减15" }]
+      },
+    ]
 	},
 
 	/**
@@ -86,7 +144,7 @@ Page({
 	 * 生命周期函数--监听页面初次渲染完成
 	 */
 	onReady: function () {
-
+    console.log('zz', wx.getSystemInfoSync().windowHeight)
 	},
 
 	/**
