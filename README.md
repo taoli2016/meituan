@@ -9,6 +9,6 @@
 
 <img src="./images/meituanForMd/home2.png" style="zoom:20%;" />
 
-##### 发现页面截图
 
+##### 发现页面截图
 <img src="./images/meituanForMd/find.png" style="zoom:20%;" />
