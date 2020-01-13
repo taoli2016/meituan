@@ -3,7 +3,7 @@
 
 
 
-##### 首页截图
+##### 首页页面截图
 
 <img src="./images/show/home.png" style="zoom:20%;" />
 
