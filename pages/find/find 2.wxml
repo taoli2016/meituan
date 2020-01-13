@@ -1,0 +1,29 @@
+<!--pages/find/find.wxml-->
+<view class="findRoot">
+  <view class='findTab'>
+    <view class='tab-title' wx:for="{{ tabList }}" bindtap='titleClick' data-index='{{ index }}' data-type="{{ item.type }}">
+      <view class="tab-title-view">
+        <text class="{{index == currentIndex ? 'titleSelected' : 'titleUnSelected'}}">{{ item.name }}</text>
+      </view>
+      <view class="{{index == currentIndex ? 'headerLineSel' : 'headerLineUnsel'}}"></view>
+    </view>
+  </view>
+  <view class="findContent">
+    <view class="findItem" wx:for="{{ itemList[currentType] }}">
+      <view>
+        <image class="findItem-img" src="{{ item.img }}"></image>
+      </view>
+      <view class="findItem-descript">
+        <text>{{ item.descript }}</text>
+      </view>
+      <view class="findItem-footer">
+        <image class="avatar" src="{{ item.avatar }}"></image>
+        <view class="findItem-footer-name">{{ item.name }}</view>
+        <view>
+          <image class="findItem-footer-star" src="../../images/find/点赞.png"></image>
+        </view>
+        <view class="findItem-footer-num">{{ item.stars }}</view>
+      </view>
+    </view>
+  </view>
+</view>

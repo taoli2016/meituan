@@ -1,0 +1,311 @@
+/* pages/home/home.wxss */
+Page{
+  height: 100%;
+}
+.homeRoot{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #f7f7f7; */
+  background-image: linear-gradient(#F4CF5E, #ffffff);
+}
+.header{
+  height:90rpx;
+  /* background-color: #F4CF5E; */
+  display: flex;
+}
+
+.avatar{
+  width: 90rpx;
+}
+
+.location{
+  width: 100rpx;
+  margin: 15rpx 0rpx;
+}
+
+.place{
+  font-size: 30rpx;
+}
+
+.arrow{
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.weather{
+  font-size: 18rpx;
+  color: #563C1E;
+}
+
+.search{
+  flex:1;
+  display: flex;
+}
+
+.searchipt{
+  flex: 1;
+  background-color: #fff;
+  height: 60rpx;
+  margin:15rpx 0rpx;
+  border-radius: 0 0rpx 0rpx 0;
+}
+
+
+.iptSearchImg{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 15rpx 0rpx 15rpx 15rpx;
+  background-color: #fff;
+  border-radius: 10rpx 0 0 10rpx;
+}
+
+.iptSearchImg image{
+  width: 36rpx;
+  height: 36rpx;
+  margin: 12rpx 0 0 10rpx;
+}
+
+.iptSayImg{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 15rpx 15rpx 15rpx 0rpx;
+  background-color: #fff;
+  border-radius: 0rpx 10rpx 10rpx 0rpx;
+}
+
+.iptSayImg image{
+  width: 35rpx;
+  height: 35rpx;
+  margin: 12rpx 10rpx 0 0rpx;
+}
+
+.scan{
+  width: 60rpx;
+  height: 100%;
+  margin: 15rpx;
+}
+
+.sacnImg{
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.content{
+  flex: 1;
+  overflow: scroll;
+}
+
+.userinfo-avatar {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 15rpx;
+  border-radius: 50%;
+}
+
+.littleIcon{
+  display: flex;
+  /* background-color: #F4CF5E; */
+  padding: 15rpx 0;
+  height: 110rpx;
+}
+
+.littleIcon view{
+  flex:1;
+  text-align: center;
+}
+
+.littleIcon view image{
+  width: 60rpx;
+  height: 60rpx;
+  display: block;
+  margin: auto;
+}
+
+.littleIcon view text{
+  font-size: 25rpx;
+}
+
+.quickBtnGroup{
+  background-color: #fff;
+  margin: 0 25rpx;
+  border-radius: 50rpx;
+}
+
+.squire{
+  display: flex;
+  margin: 0 20rpx;
+}
+
+.squireItem{
+  flex: 1;
+  margin: 20rpx 0;
+  text-align: center;
+}
+
+
+.squireItemIcon{
+  display: block;
+}
+
+.squireItemIconBody{
+  display: inline-block;
+  filter:brightness(1.1);
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 25rpx;
+}
+
+.squireItemIconImage{
+  width: 60rpx;
+  height: 60rpx;
+  display: block;
+  margin: 20rpx auto;
+}
+
+.squireText{
+  margin: -15rpx 0 0 0;
+}
+
+.squireText text{
+  font-size: 18rpx;
+  vertical-align: top;
+  color: #676767;
+}
+
+.secondSquire{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15rpx 20rpx 0rpx 20rpx;
+  text-align: center;
+  padding-bottom: 20rpx;
+}
+
+.secondSquireItem{
+  width: 19.999999%;
+  text-align: center;
+}
+
+.advertise{
+  display: flex;
+  margin: 20rpx 20rpx;
+}
+
+.swiper{
+  width:60%;
+  height: 200rpx;
+  border-radius: 25rpx;
+}
+
+.advertisement{
+  flex: 1;
+  border-radius: 25rpx;
+}
+
+.swiperComponent {
+  width: 100%;
+  height: 200rpx;
+  display: block;
+  position: relative;
+  background: #f0f0f0;
+  border-radius: 25rpx;
+}
+.imgSlide {
+  width: 100%;
+  height: 200rpx;
+  border-radius: 25rpx;
+}
+
+.advertiseBgI{
+  width: 100%;
+  height: 200rpx;
+  border-radius: 25rpx;
+}
+
+.goods{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20rpx 20rpx;
+  /* background-color: #fff; */
+  /* height: 700rpx; */
+}
+.goodsItem{
+  /* flex: 1; */
+  width: 49.7%;
+  margin-bottom: 30rpx;
+  /* height: 30rpx; */
+  /* border: 1rpx solid black; */
+  /* padding: 0 10rpx 0 10rpx; */
+}
+
+.goodsContent{
+  margin: 0 10rpx 0 10rpx;
+  border-radius: 25rpx;
+} 
+
+.goodsContent view{
+  /* padding: 0 10rpx 0 10rpx;
+  background-color: #fff; */
+}
+
+.goodsImg{
+  width: 100%;
+  height: 300rpx;
+  border-radius: 25rpx 25rpx 0 0;
+}
+
+.text-content{
+  display: flex;
+  padding: 0 10rpx 0 10rpx;
+  background-color: #fff;
+
+}
+
+.shopScore{
+  color: #C2793F;
+  font-size: 25rpx;
+  width: 75rpx;
+}
+
+.shopDiscript{
+  font-size: 25rpx;
+  color: #848484;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space:nowrap;
+  flex: 1;
+}
+
+.tags{
+  font-size: 22rpx;
+  background-color: #FDF4F7;
+  color: #C35661;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+  padding: 5rpx 10rpx;
+}
+
+.tags-content{
+  border-radius: 0 0 25rpx 25rpx;
+  height: 60rpx;
+  padding: 0 10rpx 0 10rpx;
+  background-color: #fff;
+}
+
+.name-content{
+  margin-top: -44rpx;
+  font-size: 30rpx;
+  padding: 0 10rpx 0 10rpx;
+  background-color: #fff;
+
+}
+
+.goodsTarget{
+  position: relative;
+  top: -44rpx;
+  opacity: 0.6;
+  font-size: 25rpx;
+  color: #fff;
+  padding: 0 10rpx 0 10rpx;
+  background-color: #848484;
+}

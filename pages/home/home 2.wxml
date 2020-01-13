@@ -1,0 +1,95 @@
+<view class="homeRoot">
+  <view class="header" style="top:{{ headerTop }}">
+    <view class="avatar">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+    <view class="location">
+      <view class="place">{{ place }}
+        <image class="arrow" src="../../images/home/arrow.png"></image>
+      </view>
+      <view class="weather">{{ weather }} {{ temperature }}</view>
+    </view>
+    <view class="search">
+      <view class="iptSearchImg">
+        <image src="../../images/home/search.png"></image>
+      </view>
+      <input class="searchipt" value="{{ iptVal }}" placeholder-style="color:#8B8B8B;font-size:25rpx;margin-left:10rpx;" placeholder="{{ searchIptHolder }}"></input>
+      <view class="iptSayImg">
+        <image src="../../images/home/语音.png"></image>
+      </view>
+    </view>
+    <view class="scan">
+      <image class="sacnImg" src="../../images/home/jiahao.png"></image>
+    </view>
+  </view>
+  <view class="content">
+    <view class="littleIcon">
+      <view wx:for="{{ littleIcon }}" wx:key="key">
+        <image src="{{ item.iconPath }}"></image>
+        <text>{{ item.text }}</text>
+      </view>
+    </view>
+    <view class="quickBtnGroup">
+      <view class="squire">
+        <view class="squireItem" wx:for="{{ firstGroup }}" wx:key="key">
+          <view class="squireItemIcon">
+            <view class="squireItemIconBody" style="background-color:{{ item.color }}">
+              <image class="squireItemIconImage" src="{{ item.iconPath }}"></image>
+            </view>
+          </view>
+          <view class="squireText">
+            <text>{{ item.text }}</text>
+          </view>
+        </view>
+      </view>
+      <view class="secondSquire">
+        <view class="secondSquireItem" wx:for="{{ secondGroup }}" wx:key="key">
+          <view class="squireItemIcon">
+              <image class="squireItemIconImage" src="{{ item.iconPath }}"></image>
+          </view>
+          <view class="squireText">
+            <text>{{ item.text }}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="advertise">
+      <view class="swiper">
+          <swiper class='swiperComponent' indicator-dots='true' autoplay='true' interval='2500'     duration='1000' circular='true'>
+      <view wx:for="{{bnrUrl}}" wx:for-index="index" wx:key="key">
+        <swiper-item>
+          <image src='{{item.url}}' class='imgSlide' mode='aspectFill'></image>
+        </swiper-item>
+      </view>
+    </swiper>
+    </view>
+      <view class="advertisement">
+        <image src="{{ advertiseBgI }}" class="advertiseBgI"></image>
+      </view>
+    </view>
+    <view class="goods">
+      <view class="goodsItem" wx:for="{{ goodsList }}" wx:key="key">
+        <view class="goodsContent">
+          <image class="goodsImg" src="{{ item.url }}"></image>
+          <view class="goodsTarget">
+            <text>{{ item.tag }}</text>
+          </view>
+          <view class="name-content">
+            <text>{{ item.name }}</text>
+          </view>
+          <view class="text-content">
+            <view class="shopScore">
+              <text>{{ item.score }}</text>
+            </view>
+            <view class="shopDiscript">
+              <text>{{ item.discript }}</text>
+            </view>
+          </view>
+          <view class="tags-content">
+            <text class="tags" wx:for="{{item.tagList }}" wx:for-item='tagItem'>{{ tagItem.text }}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

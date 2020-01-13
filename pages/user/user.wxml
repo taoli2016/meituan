@@ -1,2 +1,81 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="userRoot">
+  <view class="user-head">
+    <view class="user-head-avatar">
+      <view>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      </view>
+    </view>
+    <view class="user-head-name">
+      <view>{{ nickName }}</view>
+    </view>
+    <view class="user-head-setting">
+      <view>
+        <image class="settingIcon" src="../../images/user/齿轮.png"></image>
+      </view>
+    </view>
+    <view class="user-head-speaking">
+      <view>
+          <image class="speakingIcon" src="../../images/user/耳机.png"></image>
+        </view>
+      </view>
+  </view>
+
+  <view class="user-icon">
+    <view class="user-icon-item" wx:for="{{ userIcon }}">
+      <view class="user-icon-url">
+        <image src="{{ item.icon }}"></image>
+      </view>
+      <view class="user-icon-descript">
+        <text>{{ item.title }}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="user-content">
+    <view class="user-content-packet">
+      <view class="myPacket">我的红包</view>
+      <view>
+        <text class="enterPacket">进入红包</text>
+        <image class="arrow" src="../../images/order/箭头.png"></image>
+      </view>
+    </view>
+
+    <view class="user-content-packetList">
+      <view class="user-content-packetList-item" wx:for="{{ packetList }}">
+        <view>
+          <text class="itemPrice">{{ item.price}}</text>
+          <text class="itemUnit">{{ item.unit}}</text>
+        </view>
+        <view>
+          <text class="itemTitle">{{ item.title }}</text>
+        </view>
+        <view>
+          <text class="itemDescript">{{ item.descript }}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="hrClass"></view>
+
+    <view class="ad">
+      <image class="adPic" src="../../images/user/ad.jpg"></image>
+    </view>
+
+    <view class="hrClass"></view>
+
+    <view class="user-content-recommend">
+      <view class="user-content-recommend-title">推荐工具</view>
+      <view class="user-content-iconGroup">
+        <view class="user-content-item" wx:for="{{ contentList }}">
+          <view class="user-content-icon">
+            <image src="{{ item.icon }}"></image>
+          </view>
+          <view class="user-content-name">
+            <text>{{ item.title }}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

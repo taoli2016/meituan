@@ -1,2 +1,38 @@
-<!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<!--pages/find/find.wxml-->
+<view class="orderRoot">
+  <view class='orderTab'>
+    <view class='tab-title' wx:for="{{ tabList }}" bindtap='titleClick' data-index='{{ index }}' data-type="{{ item.type }}">
+      <view class="tab-title-view">
+        <text class="{{index == currentIndex ? 'titleSelected' : 'titleUnSelected'}}">{{ item.name }}</text>
+      </view>
+      <view class="{{index == currentIndex ? 'headerLineSel' : 'headerLineUnsel'}}"></view>
+    </view>
+  </view>
+  <view class="orderContent">
+    <view class="orderItem" wx:for="{{ itemList[currentType] }}">
+      <view class="order-head">
+        <view class="order-head-avatar">
+          <image class="avatar" src="{{ item.avatar }}"></image>
+        </view>
+        <view class="order-head-title">{{ item.name }}</view>
+        <image class="order-head-arrow" src="../../images/order/箭头.png"></image>
+        <view class="order-head-view"></view>
+        <view class="order-head-assess">{{ item.assess }}</view>
+      </view>
+      <view class="order-hr"></view>
+      <view class="order-content">
+        <view>
+          <image class="order-content-img" src="{{ item.avatar }}"></image>
+        </view>
+        <view class="order-content-info">
+          <view class="order-content-time">下单时间：{{ item.time }}</view>
+          <view class="order-content-price">总价：{{ item.price }}</view>
+        </view>
+      </view>
+      <view class="order-content-bottom">
+        <view class="btn">评价</view>
+        <view class="btn">再来一单</view>
+      </view>
+    </view>
+  </view>
+</view>
